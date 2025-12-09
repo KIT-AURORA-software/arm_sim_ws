@@ -1,0 +1,38 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    aurora_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    aurora_hand:
+      type: position_controllers/GripperActionController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+aurora_arm_controller:
+  ros__parameters:
+    joints:
+      - rotation1
+      - rotation2
+      - rotation3
+      - rotation4
+      - rotation5
+      - slide1
+      - slide2
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+# aurora_hand:
+#   ros__parameters:
+#     joints: 
+#     - rotation5
+#     - slide1
+#     - slide2

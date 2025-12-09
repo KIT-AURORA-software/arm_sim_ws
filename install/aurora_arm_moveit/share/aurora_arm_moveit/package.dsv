@@ -1,0 +1,8 @@
+source;share/aurora_arm_moveit/hook/cmake_prefix_path.ps1
+source;share/aurora_arm_moveit/hook/cmake_prefix_path.dsv
+source;share/aurora_arm_moveit/hook/cmake_prefix_path.sh
+source;share/aurora_arm_moveit/local_setup.bash
+source;share/aurora_arm_moveit/local_setup.dsv
+source;share/aurora_arm_moveit/local_setup.ps1
+source;share/aurora_arm_moveit/local_setup.sh
+source;share/aurora_arm_moveit/local_setup.zsh

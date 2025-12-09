@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+
+<robot name="aurora_arm">
+
+    <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+    </material>
+
+    <link name = "base_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/base_link.stl" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </visual>
+    </link>
+
+    <link name = "base_link_yaw">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/arm1_link_1.stl" />
+            </geometry>
+            <origin xyz="-0.0 -0.03 -0.0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name = "arm_link_2">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/arm2_link_1.stl" />
+            </geometry>
+            <origin xyz="-0.0 -0.03 -0.0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name = "arm_link_3">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/arm3_link_1.stl" />
+            </geometry>
+            <origin xyz="-0.0 -0.03 -0.0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name = "arm_link_4">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/arm4_link_1.stl" />
+            </geometry>
+            <origin xyz="-0.0 -0.03 -0.0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name = "base_link_yaw">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/arm_link_1.stl" />
+            </geometry>
+            <origin xyz="-0.0 -0.03 -0.0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name = "base_link_yaw">
+        <visual>
+            <geometry>
+                <mesh filename="package://aurora_arm/meshes/arm_link_1.stl" />
+            </geometry>
+            <origin xyz="-0.0 -0.03 -0.0" rpy="0 0 0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+    

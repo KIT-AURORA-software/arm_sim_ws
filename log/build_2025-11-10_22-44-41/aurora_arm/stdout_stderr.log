@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/aurora_arm/aurora_arm.egg-info/PKG-INFO
+writing dependency_links to ../../build/aurora_arm/aurora_arm.egg-info/dependency_links.txt
+writing entry points to ../../build/aurora_arm/aurora_arm.egg-info/entry_points.txt
+writing requirements to ../../build/aurora_arm/aurora_arm.egg-info/requires.txt
+writing top-level names to ../../build/aurora_arm/aurora_arm.egg-info/top_level.txt
+reading manifest file '../../build/aurora_arm/aurora_arm.egg-info/SOURCES.txt'
+writing manifest file '../../build/aurora_arm/aurora_arm.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/joystick.launch.py -> /home/fuga1129/arm_sim_ws/install/aurora_arm/share/aurora_arm/launch
+copying description/ros2_ign_control_arm.xacro -> /home/fuga1129/arm_sim_ws/install/aurora_arm/share/aurora_arm/description
+running install_egg_info
+removing '/home/fuga1129/arm_sim_ws/install/aurora_arm/lib/python3.10/site-packages/aurora_arm-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/aurora_arm/aurora_arm.egg-info to /home/fuga1129/arm_sim_ws/install/aurora_arm/lib/python3.10/site-packages/aurora_arm-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/fuga1129/arm_sim_ws/build/aurora_arm/install.log'

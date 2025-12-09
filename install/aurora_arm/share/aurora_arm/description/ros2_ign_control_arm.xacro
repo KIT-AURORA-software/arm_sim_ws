@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+    <!-- ros2_control設定を追加 -->
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        
+        <joint name="rotation1">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        
+        <joint name="rotation2">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        
+        <joint name="rotation3">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        
+        <joint name="rotation4">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        
+        <!-- <joint name="rotation5">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint> -->
+        
+        <joint name="slide1">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        
+        <joint name="slide2">
+            <command_interface name="velocity"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <!-- Classic Gazebo用プラグイン -->
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find aurora_arm)/config/controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>

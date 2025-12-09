@@ -1,0 +1,10 @@
+# Default initial positions for aurora_arm's ros2_control fake system
+
+initial_positions:
+  rotation1: 0
+  rotation2: 0
+  rotation3: 0
+  rotation4: 0
+  rotation5: 0
+  slide1: 0
+  slide2: 0

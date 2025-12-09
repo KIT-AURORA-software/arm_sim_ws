@@ -1,0 +1,1 @@
+/home/fuga1129/arm_sim_ws/src/aurora_arm/launch/launch_ign.launch.py
