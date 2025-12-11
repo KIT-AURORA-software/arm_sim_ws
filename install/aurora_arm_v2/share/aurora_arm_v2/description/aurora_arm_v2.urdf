@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<robot name="aurora_arm">
+    <material name="gray">
+        <color rgba ="0.5 0.5 0.5 1.0"/>
+    </material>
+
+    <link name="base_link">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value="100.0"/>
+            <inertia ixx="10.0" ixy="0.0" ixz="0.0" iyy="10.0" iyz="0.0" izz="10.0"/>
+        </inertial>
+        <collision>
+            <geometry>
+                <box size="0.2 0.2 0.1"/>
+            </geometry>
+            <origin rpy="0 0 0" xyz="0 0 0.05"/>
+        </collision>
+    </link>
+
+    <link name = "state_link">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name = "base_spin_link">
+        <visual>
+            <origin xyz="-0.0 -0.03 -0.0"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm1_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision>
+            <origin xyz="-0.0 -0.03 -0.0"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm1_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name = "arm2_link">
+        <visual>
+            <origin xyz="5e-06 -0.045 0.02"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm2_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+
+        <collision>
+            <origin xyz="5e-06 -0.045 0.02"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm2_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+        
+    </link>
+
+    <link name = "arm3_link">
+        <visual>
+            <origin xyz="0.175348 -0.223192 -0.010046"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm3_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0.175348 -0.223192 -0.010046"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm3_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <link name = "arm4_link">
+        <visual>
+            <origin xyz="-0.011997 -0.388722 0.010003"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm4_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+
+        <collision>
+            <origin xyz="-0.011997 -0.388722 0.010003"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm4_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <link name = "arm5_link">
+        <visual>
+            <origin xyz="-0.026167 -0.502846 7e-06"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm5_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+
+        <collision>
+            <origin xyz="-0.026167 -0.502846 7e-06"/>
+            <geometry>
+                <mesh filename="package://aurora_arm_v2/meshes/arm5_link_1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <joint name="base" type="fixed">
+        <parent link="base_link"/>
+        <child link="state_link"/>
+        <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
+    </joint>
+
+    <joint name ="body_spin_joint" type="revolute">
+        <parent link="state_link"/>
+        <child link="base_spin_link"/>
+        <origin xyz="0.0 0.03 0.0" rpy="0 0 0"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit upper="-0.392699" lower="-2.748894" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name ="arm1_joint" type="revolute">
+        <parent link="base_spin_link"/>
+        <child link="arm2_link"/>
+        <origin xyz="-5e-06 0.015 -0.02" rpy="0 0 0"/>
+        <axis xyz="-0.00026 -0.0 -1.0"/>
+        <limit upper="1.570796" lower="-0.785398" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name="arm2_joint" type="revolute">
+        <parent link="arm2_link"/>
+        <child link="arm3_link"/>
+        <origin xyz="-0.175343 0.178192 0.030046" rpy="0 0 0"/>
+        <axis xyz="-0.00026 0.0 -1.0"/>
+        <limit upper="0.785398" lower="-3.141593" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name="arm3_joint" type="revolute">
+        <parent link="arm3_link"/>
+        <child link="arm4_link"/>
+        <origin xyz="0.187345 0.16553 -0.020049" rpy="0 0 0"/>
+        <axis xyz="-0.00026 0.0 -1.0"/>
+        <limit upper="1.570796" lower="-0.872665" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name="arm4_joint" type="revolute">
+        <parent link="arm4_link"/>
+        <child link="arm5_link"/>
+        <origin xyz="0.01417 0.114124 0.009996" rpy="0 0 0"/>
+        <axis xyz="0.749398 0.662119 -0.000195"/>
+        <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
+    </joint>    
+    
+</robot>

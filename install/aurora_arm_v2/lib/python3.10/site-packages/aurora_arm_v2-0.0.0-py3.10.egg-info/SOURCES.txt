@@ -11,6 +11,7 @@ setup.py
 aurora_arm_v2/__init__.py
 description/aurora_arm.urdf
 description/aurora_arm.xacro
+description/aurora_arm_v2.urdf
 meshes/arm1_link_1.stl
 meshes/arm2_link_1.stl
 meshes/arm3_link_1.stl

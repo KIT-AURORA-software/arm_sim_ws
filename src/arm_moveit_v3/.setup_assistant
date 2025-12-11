@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: aurora_arm_v2
+    relative_path: description/aurora_arm_v2.urdf
+  srdf:
+    relative_path: config/aurora_arm.srdf
+  package_settings:
+    author_name: Sakihama
+    author_email: sakihama.fuga300@mail.kyutech.jp
+    generated_timestamp: 1765348267
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

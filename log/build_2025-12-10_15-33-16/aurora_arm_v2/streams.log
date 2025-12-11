@@ -1,0 +1,20 @@
+[0.746s] Invoking command in '/home/fuga1129/arm_sim_ws/src/aurora_arm_v2': PYTHONPATH=/home/fuga1129/arm_sim_ws/build/aurora_arm_v2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fuga1129/arm_sim_ws/install/aurora_arm_v2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aurora_arm_v2 build --build-base /home/fuga1129/arm_sim_ws/build/aurora_arm_v2/build install --record /home/fuga1129/arm_sim_ws/build/aurora_arm_v2/install.log --single-version-externally-managed install_data
+[0.903s] running egg_info
+[0.904s] writing ../../build/aurora_arm_v2/aurora_arm_v2.egg-info/PKG-INFO
+[0.904s] writing dependency_links to ../../build/aurora_arm_v2/aurora_arm_v2.egg-info/dependency_links.txt
+[0.904s] writing entry points to ../../build/aurora_arm_v2/aurora_arm_v2.egg-info/entry_points.txt
+[0.904s] writing requirements to ../../build/aurora_arm_v2/aurora_arm_v2.egg-info/requires.txt
+[0.904s] writing top-level names to ../../build/aurora_arm_v2/aurora_arm_v2.egg-info/top_level.txt
+[0.905s] reading manifest file '../../build/aurora_arm_v2/aurora_arm_v2.egg-info/SOURCES.txt'
+[0.906s] writing manifest file '../../build/aurora_arm_v2/aurora_arm_v2.egg-info/SOURCES.txt'
+[0.906s] running build
+[0.906s] running build_py
+[0.906s] running install
+[0.906s] running install_lib
+[0.907s] running install_data
+[0.907s] running install_egg_info
+[0.908s] removing '/home/fuga1129/arm_sim_ws/install/aurora_arm_v2/lib/python3.10/site-packages/aurora_arm_v2-0.0.0-py3.10.egg-info' (and everything under it)
+[0.908s] Copying ../../build/aurora_arm_v2/aurora_arm_v2.egg-info to /home/fuga1129/arm_sim_ws/install/aurora_arm_v2/lib/python3.10/site-packages/aurora_arm_v2-0.0.0-py3.10.egg-info
+[0.909s] running install_scripts
+[0.923s] writing list of installed files to '/home/fuga1129/arm_sim_ws/build/aurora_arm_v2/install.log'
+[0.948s] Invoked command in '/home/fuga1129/arm_sim_ws/src/aurora_arm_v2' returned '0': PYTHONPATH=/home/fuga1129/arm_sim_ws/build/aurora_arm_v2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fuga1129/arm_sim_ws/install/aurora_arm_v2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/aurora_arm_v2 build --build-base /home/fuga1129/arm_sim_ws/build/aurora_arm_v2/build install --record /home/fuga1129/arm_sim_ws/build/aurora_arm_v2/install.log --single-version-externally-managed install_data
