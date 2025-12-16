@@ -13,3 +13,8 @@ cd ~/arm_sim_ws
 colcon build
 source install/setup.bash
 ```
+3. 起動する
+```
+ros2 launch aurora_arm launch_gazebo.launach.py
+```
+gazeboにアームがうつったらOK
