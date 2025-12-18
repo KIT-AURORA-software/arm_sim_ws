@@ -13,3 +13,6 @@ source install/setup.bash
 ```
 ros2 launch arm_moveit_v3 demo.launch.py
 ```
+rviz2でアームのモデルなどが出てこればok<br>
+![alt text](image.png)<br>
+こんな感じの画面が出ればok
